@@ -1,5 +1,9 @@
+#IDE settings
+/.idea
 /.settings
 /.classpath
 /.project
+
+# javac output
 /bin
 *.class
