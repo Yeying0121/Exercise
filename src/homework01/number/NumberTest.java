@@ -1,4 +1,4 @@
-package number;
+package homework01.number;
 import java.util.*;
 public class NumberTest {
 
@@ -26,7 +26,7 @@ public class NumberTest {
      *  这样我们就不用一直输入了
      */
     public static List<Integer> mockInputList () {
-        List<Integer> result = new ArrayList<Integer>();
+        List<Integer> result = new ArrayList<>();
         result.add(1);
         result.add(2);
         result.add(3);
@@ -39,12 +39,36 @@ public class NumberTest {
      * 常用的输出模块
      */
     public static void output (Object s) {
+
         System.out.println(s);
     }
+    /*
+    *排列组合模块
+    * 输入为main模块调用传递过来的list
+    * 循环组合，并使用HashSet将组合中的重复元素剔除
+    * 输出为排列组合后的结果和总数
+     */
 
     public static int combination (List<Integer> list) {
         int result = 0;
-
+        List<Integer> output =new ArrayList<>();
+        for(int i=0;i<list.size();i++) {
+            for (int j = 0; j < list.size(); j++) {
+                for (int k = 0; k < list.size(); k++) {
+                    while(i!=j&&i!=k&&j!=k) {
+                        Integer com = list.get(i) * 100 + list.get(j) * 10 + list.get(k);
+                        output.add(com);
+                        break;
+                    }
+                }
+            }
+        }
+        HashSet h = new HashSet(output);
+        output.clear();
+        output.addAll(h);
+        result = output.size();
+        //Object tmp = list;
+        NumberTest.output(output);
         // TODO
         // 计算中间 NumberTest.output( tmp )
 
@@ -53,9 +77,10 @@ public class NumberTest {
     }
 
 
-    public static void main (String[]args){
+    public static void main (String[] args){
         // List<Integer> input = NumberTest.getInputList();
         List<Integer> input = NumberTest.mockInputList();
-        NumberTest.combination(input);
+        int result=NumberTest.combination(input);
+        System.out.println("可以组合为" + result  + "个三位数");
     }
 }
