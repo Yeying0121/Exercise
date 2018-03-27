@@ -3,7 +3,10 @@
 /.settings
 /.classpath
 /.project
+/Exercise.iml
 
 # javac output
 /bin
 *.class
+
+
