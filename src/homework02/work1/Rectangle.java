@@ -11,8 +11,9 @@ public class Rectangle extends PlanarGraph {
      * 无输入
      * 输出为长方形的面积
      */
-    public double getArea() {
-        return height*width;
+    public void getArea() {
+        double area = height*width;
+        System.out.println("长方形的面积为" +area);
     }
 
     /*
@@ -20,7 +21,8 @@ public class Rectangle extends PlanarGraph {
      * 无输入
      * 输出为长方形周长
      */
-    public double getPerimeter() {
-        return 2*(height+width);
+    public void getPerimeter() {
+        double perimeter = 2*(height+width);
+        System.out.println("长方形的周长为" +perimeter);
     }
 }

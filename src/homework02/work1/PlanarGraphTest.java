@@ -21,15 +21,10 @@ public class PlanarGraphTest {
         }
         return result;
     }
+
     public static void main(String [] args) {
         PlanarGraph circle = new Circle(3.5);
         PlanarGraph rect = new Rectangle(3,7);
         PlanarGraph tri = new Triangle(3,4,5);
-        System.out.println("圆形的面积为" +circle.getArea());
-        System.out.println("圆形的周长为" +circle.getPerimeter());
-        System.out.println("长方形的面积为" +rect.getArea());
-        System.out.println("长方形的周长为" +rect.getPerimeter());
-        System.out.println("三角形面积为" +tri.getArea());
-        System.out.println("三角形的周长为" +tri.getPerimeter());
     }
 }

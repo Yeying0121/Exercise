@@ -13,9 +13,10 @@ public class Triangle extends PlanarGraph {
      * 无输入
      * 输出为三角形面积
      */
-    public double getArea() {
+    public void getArea() {
         double p = (firstline+secondline+thirdline)/2;
-        return Math.sqrt(p*(p-firstline)*(p-secondline)*(p-thirdline));
+        double area = Math.sqrt(p*(p-firstline)*(p-secondline)*(p-thirdline));
+        System.out.println("三角形面积为" +area);
     }
 
     /*
@@ -23,7 +24,8 @@ public class Triangle extends PlanarGraph {
      * 无输入
      * 输出为三角形周长
      */
-    public double getPerimeter() {
-        return firstline+secondline+thirdline;
+    public void getPerimeter() {
+        double perimeter = firstline+secondline+thirdline;
+        System.out.println("三角形的周长为" +perimeter);
     }
 }

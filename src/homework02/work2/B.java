@@ -6,7 +6,7 @@ public class B {
      * 输入为main模块调用传过来的a.num
      * 输出为猜测结果和猜测的总次数
      */
-    public static void guess ( int g){
+    public static int guess ( int g){
         int countAll = 0;
         int min = 0;
         int max = 1000;
@@ -24,11 +24,15 @@ public class B {
                 break;
             }
         }
-        System.out.println("猜测的次数为： " + countAll);
+        return countAll;
+    }
+    public static void output(int count) {
+        System.out.println("猜测的次数为： " + count);
     }
 
     public static void main(String[] args) {
         A a = new A();
-        B.guess(a.num);
+        int result = B.guess(a.num);
+        B.output(result);
     }
 }

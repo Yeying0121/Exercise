@@ -13,15 +13,17 @@ public class Circle extends PlanarGraph {
      * 无输入
      * 输出为圆的面积
      */
-    public double getArea() {
-        return PI*r*r;
+    public void getArea() {
+        double area =  PI*r*r;
+        System.out.println("圆形的面积为" +area);
     }
 
     /*获取圆周长模块
     * 无输入
     * 输出为圆周长
     */
-    public double getPerimeter() {
-        return 2*PI*r;
+    public void getPerimeter() {
+        double perimeter = 2*PI*r;
+        System.out.println("圆形的周长为" +perimeter);
     }
 }

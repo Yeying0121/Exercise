@@ -7,6 +7,6 @@ package homework02.work1;
  * 无输出
  */
 public abstract class PlanarGraph {
-    abstract public double getArea();
-    abstract public double getPerimeter();
+    abstract public void getArea();
+    abstract public void getPerimeter();
 }
