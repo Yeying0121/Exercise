@@ -6,13 +6,11 @@ import java.util.*;
 import java.text.ParseException;
 
 public class DateTest {
-    public static Date getInputDate() throws Exception{
+    public static String getInputDate() throws Exception{
         Scanner scan = new Scanner(System.in);
         System.out.println("请输入日期：");
         String str = scan.nextLine().trim();
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        Date date = sdf.parse(str);
-        return date;
+        return str;
     }
 
     public static int getInputNum() {
@@ -23,13 +21,14 @@ public class DateTest {
 
     }
 
-    public static String date(Date d,int num){
+    public static String date(String d,int num)throws ParseException{
         Calendar c = Calendar.getInstance();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        c.setTime(d);
+        Date date = sdf.parse(d);
+        c.setTime(date);
         c.add(Calendar.DATE,num);
-        d = c.getTime();
-        String output = sdf.format(d);
+        date = c.getTime();
+        String output = sdf.format(date);
         return output;
 
     }
@@ -38,7 +37,7 @@ public class DateTest {
         System.out.println(num+ "天后是" +outdate);
     }
     public static void main(String [] args) throws Exception{
-       Date inputdate = DateTest.getInputDate();
+       String inputdate = DateTest.getInputDate();
        int n = DateTest.getInputNum();
        String out = DateTest.date(inputdate,n);
        DateTest.output(n,out);
