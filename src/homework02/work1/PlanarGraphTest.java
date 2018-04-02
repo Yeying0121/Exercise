@@ -1,6 +1,5 @@
 package homework02.work1;
 
-import javax.swing.plaf.synth.SynthScrollBarUI;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -30,7 +29,7 @@ public class PlanarGraphTest {
 //        PlanarGraph rect = new Rectangle(3,7);
             PlanarGraph tri = new Triangle(3,4,100);
             tri.getArea();
-        } catch (myException e){
+        } catch (MyException e){
             e.printStackTrace();
         } catch (RuntimeException e){
             // TODO
