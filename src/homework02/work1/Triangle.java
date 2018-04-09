@@ -2,10 +2,16 @@ package homework02.work1;
 
 public class Triangle extends PlanarGraph {
     private double firstline,secondline,thirdline;
-    public Triangle(double firstline,double secondline,double thirdline) {
+
+    public Triangle(double firstline,double secondline,double thirdline) throws MyException {
+
+        if ( !(firstline + secondline > thirdline && firstline - secondline < thirdline)) {
+            throw new MyException("input is wrong");
+        }
         this.firstline = firstline;
         this.secondline = secondline;
         this.thirdline = thirdline;
+
     }
 
     /*
