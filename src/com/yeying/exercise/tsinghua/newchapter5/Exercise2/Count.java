@@ -1,4 +1,4 @@
-package com.yeying.exercise.homework.newchapter5.Exercise2;
+package com.yeying.exercise.tsinghua.newchapter5.Exercise2;
 
 public class Count {
     private int count = 0;

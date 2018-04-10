@@ -1,4 +1,4 @@
-package com.yeying.exercise.homework.newchapter4.Exercise2;
+package com.yeying.exercise.tsinghua.newchapter4.Exercise2;
 
 public class Triangle {
     public static void main(String[] args) {

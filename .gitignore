@@ -8,5 +8,6 @@
 # javac output
 /bin
 *.class
+/out
 
 
