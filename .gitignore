@@ -1,4 +1,4 @@
-#IDE settings
+# IDE settings
 /.idea
 /.settings
 /.classpath
@@ -8,5 +8,8 @@
 # javac output
 /bin
 *.class
+/out
 
+# dependencies
+/lib
 
