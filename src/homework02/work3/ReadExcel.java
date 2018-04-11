@@ -41,7 +41,7 @@ public class ReadExcel {
         }
     }
     public static void main(String[] args) {
-        File file = new File("E:/八班名单.xlsx");
+        File file = new File("F:/毕设相关/高血压知识整理/叶莹_高血压防治指南知识整理_1.0.xlsx");
         readExcel(file);
     }
 }
