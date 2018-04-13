@@ -1,10 +1,10 @@
-package com.yeying.exercise.tsinghua.newchapter4.Exercise3;
+package com.yeying.exercise.qinghua.newchapter4.Exercise3;
 
 public class Nine {
     public static void main(String[] args) {
         int n = 9;
         for (int i = 0; i < n; i++) {
-            for(int j = 0; j < n; j++) {
+            for (int j = 0; j < n; j++) {
                 System.out.print("* ");
             }
             System.out.println();

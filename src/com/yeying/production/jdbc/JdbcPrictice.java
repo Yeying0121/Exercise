@@ -12,7 +12,7 @@ public class JdbcPrictice {
 
         String sql = "Select name from user_t";
 
-        // 封装的JDBC 工具类，输入数据库操作层
+        // 封装的JDBC 工具类，属于数据库操作层
         JDBCUtils jdbcUtils = new JDBCUtils();
         List<String> nameQueryResult = jdbcUtils.getUserName(sql);
         System.out.println(nameQueryResult);
