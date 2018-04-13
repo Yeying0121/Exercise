@@ -1,4 +1,4 @@
-package com.yeying.exercise.tsinghua.newchapter5.Exercise1;
+package com.yeying.exercise.inghua.newchapter5.Exercise1;
 
 public class Student {
     private int studentid = 12345;
@@ -16,7 +16,7 @@ public class Student {
     public String getSex() {
         return sex;
     }
-
+q
     public int getAge() {
         return age;
     }

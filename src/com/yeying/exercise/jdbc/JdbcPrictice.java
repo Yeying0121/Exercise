@@ -6,7 +6,7 @@ import java.sql.Statement;
 public class JdbcPrictice {
     public static void main(String[] args) {
 
-        String  sql="Select*from user_t";
+        String  sql="Select * from user_t";
 
         Connection con=null;
         Statement st=null;

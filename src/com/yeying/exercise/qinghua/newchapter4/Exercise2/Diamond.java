@@ -1,4 +1,4 @@
-package com.yeying.exercise.tsinghua.newchapter4.Exercise2;
+package com.yeying.exercise.qinghua.newchapter4.Exercise2;
 
 public class Diamond {
     public static void main(String[] args) {

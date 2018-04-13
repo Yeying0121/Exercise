@@ -1,4 +1,4 @@
-package com.yeying.exercise.tsinghua.newchapter4.Exercise1;
+package com.yeying.exercise.qinghua.newchapter4.Exercise1;
 
 public class Sort {
     public static void main(String[] args) {
